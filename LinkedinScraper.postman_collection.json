@@ -1,0 +1,78 @@
+{
+	"info": {
+		"_postman_id": "4ed6754c-f914-460f-b606-4139ccb86bd9",
+		"name": "LinkedinScraper",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "export csv",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/company/csv",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"company",
+						"csv"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "retrieve accounts",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/company/all",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"company",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "scrape urls",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"urls\": [\"verveventures\"]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/scrape/accounts",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"scrape",
+						"accounts"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
